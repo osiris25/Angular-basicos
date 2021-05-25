@@ -1,0 +1,21 @@
+<h3>{{nombre}}</h3>
+
+<dl><!--representa una lista descriptiva -->
+	<td> Nombre:</td><!--table description-->
+	<dd>{{nombre}}</dd><!--description-->
+
+	<td> Edad:</td>
+	<dd>{{edad}}</dd>
+
+	<td> Funcion:</td>
+	<dd>{{obtener()}}</dd>
+
+	<td> Capitalizado</td>
+	<dd>{{nombreCapitalizado}}</dd>
+</dl>
+<button (click)="cambiarNombre()">
+	Cambiar Héroe
+</button>
+<button (click)="cambiarEdad()">
+	Cambiar Edad
+</button>

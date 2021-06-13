@@ -1,0 +1,11 @@
+<h3>Agregar <small>{{nuevo.nombre}}</small></h3>
+<hr>
+<form (ngSubmit)="agregar()">
+
+	<!--El [value] quiere decir que del lado de ts hay una variable de la cual va a tomar el valor
+			para ere campo, nuevo.nombre -> estamos accediendo al valor del objeto
+			opcion de realizarlo 1 <input type="text" placeholder="Nombre del personaje" [value]="nuevo.nombre" (input)="cambiarNombre($event)"/>-->
+	<input type="text" placeholder="Nombre del personaje" name="nombre" [(ngModel)]="nuevo.nombre" />
+	<input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder" />
+	<button type="submit">AGREGAR</button>
+</form>
